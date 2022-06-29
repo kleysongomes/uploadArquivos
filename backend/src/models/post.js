@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const PostSchema = new mongoose.Schema({
   name: String,
@@ -7,8 +7,7 @@ const PostSchema = new mongoose.Schema({
   url: String,
   createdAt: {
     type: Date,
-    default: Date.now,
-  },
+    defalt: Date.now
+  }
 });
-
-module.exports = mongoose.model("Post", PostSchema);
+module.exports = mongoose.model("post", PostSchema);
